@@ -10,5 +10,14 @@
     "browser_style": true,
     "default_icon": "icons/icon.png",
     "default_popup": "popup/index.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "note-saver@seanfeng.dev"
+    }
   }
 }
