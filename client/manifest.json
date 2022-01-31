@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Note Saver",
+  "version": "1.0",
+  "description": "Save text locally",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": "icons/icon.png",
+    "default_popup": "popup/index.html"
+  }
+}
