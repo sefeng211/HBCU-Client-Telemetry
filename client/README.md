@@ -1,6 +1,6 @@
 ## Note Saver
 
-This addon allows users to save notes to Firefox. There are two ways to
+This addon allows users to save notes to their Browser. There are two ways to
 save notes.
 
   1. Users can save short text via the 'Quick Mode'
@@ -8,6 +8,6 @@ save notes.
 
 Questions that we'd like to answer
   1. Which method is more popular?
-  2. How often do users use the addon?
-  3. The responsiveness of the saving operation
+  2. The responsiveness of the saving operation
+  3. The extension performance
 
