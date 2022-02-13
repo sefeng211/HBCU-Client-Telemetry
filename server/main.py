@@ -13,6 +13,7 @@ def hello():
     if request.method == 'POST':
         request_data = request.get_data()
         print(request_data)
+        print(request.headers)
     return "hello"
 
 

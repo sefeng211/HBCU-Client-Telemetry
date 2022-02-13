@@ -3,10 +3,20 @@ const quick_save_button = document.getElementById("quick-mode-button");
 const data = [];
 
 window.addEventListener("blur", function() {
+  console.log("blur");
   navigator.sendBeacon("http://localhost:5000", JSON.stringify(data));
 });
 
+window.addEventListener("unload", function() {
+  console.log("unload");
+});
+window.addEventListener("pagehide", function() {
+  console.log("pagehide");
+});
+
+
 quick_save_button.addEventListener("click", function() {
+  console.log("quick_save_button");
   const note = document.getElementById("quick-mode-text").value;
 
   const start = performance.now();
@@ -54,6 +64,21 @@ const fullModePanel = {
 document.getElementById("full-mode-button").addEventListener("click",
   function() {
     browser.windows.create(fullModePanel);
+  }
+);
+
+// Feedback
+const surveyPanel = {
+  allowScriptsToClose: true,
+  type: "panel",
+  url: browser.runtime.getURL("popup/survey.html"),
+  width: 400,
+  height: 600
+};
+
+document.getElementById("survey-button").addEventListener("click",
+  function() {
+    browser.windows.create(surveyPanel);
   }
 );
 
